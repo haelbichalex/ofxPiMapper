@@ -46,7 +46,7 @@ void FboSource::setDisableDraw(bool b){
 void FboSource::allocate(int width, int height){
 	clear();
 	fbo = new ofFbo();
-	fbo->allocate(width, height);
+	fbo->allocate(width, height, GL_RGB32F);
 
 	// Clear FBO
 	fbo->begin();
